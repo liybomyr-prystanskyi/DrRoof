@@ -106,13 +106,10 @@ jQuery(function () {
 				slidesPerView: 3,
 				slidesPerColumn: 1,
 			}
-
 		}
 	});
 
 
-
-	
 
 
 	document.querySelector('#request-form1 #page').value = window.location.href;

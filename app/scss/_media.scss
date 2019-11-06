@@ -1,6 +1,14 @@
 @import "vars";
 
 @media screen and (max-width: 992px) {
+  .my-order-1 {
+    order: 1;
+  }
+
+  .my-order-2 {
+    order: 2;
+  }
+
   .header {
     display: flex;
     justify-content: center;
@@ -124,14 +132,139 @@
       }
     }
   }
-
-
-
-
 }
 
 @media screen and (max-width:576px) {
+
+  .contact-banner {
+    &__main {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .contact-form {
+    padding-top: 30px;
+
+    &__main {
+      &__form {
+        &__title {
+
+          h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #464646;
+            margin-bottom: 20px;
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__inputs {
+          label {
+            font-size: 16px;
+          }
+
+          input {
+            min-height: 40px;
+          }
+        }
+
+        &__submit {
+          font-size: 18px;
+          min-height: 50px;
+          margin: 40px auto 0;
+        }
+      }
+
+      &__location {
+        margin-top: 30px;
+
+        &__title {
+
+          h2 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__info {
+          a {
+            font-size: 16px;
+          }
+        }
+
+        &__social {
+          a {
+            font-size: 16px;
+
+            img {
+              max-width: 30px;
+            }
+          }
+        }
+
+        &__map {
+          width: 100%;
+          height: auto;
+          margin-top: 50px;
+
+          iframe {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .services-banner {
+    &__main {
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .services-item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 50px;
+
+    &__main {
+
+      &__info {
+        padding: 50px 0 0 0px;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      &__image {
+        margin-top: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .home-banner {
+    min-height: 450px;
+
     &__main {
       &__title {
         h1 {
@@ -151,6 +284,10 @@
         }
       }
     }
+  }
+
+  .services-footer {
+    padding: 60px 0 0 0;
   }
 
   .to-top {
@@ -295,20 +432,18 @@
 
   .our-work {
     max-height: 300px;
-    margin: 180px 0 0 0;
+    margin: 100px 0 0 0;
 
     &__main {
       top: -50px;
 
       &__title {
-
         h2 {
           font-size: 25px;
         }
       }
 
       &__swiper {
-
         &__wrapper {
           &__slide {
             display: flex;
@@ -368,13 +503,6 @@
         }
       }
 
-      &__gallery-top {
-
-        &__swiper {
-          &__slide {}
-        }
-      }
-
       &__next {
         display: none;
       }
@@ -385,17 +513,10 @@
     }
   }
 
-
   .location {
-
-
     &__main {
-
-
       &__title {
-
         min-height: 100px;
-
 
         h2 {
           font-size: 25px;
@@ -405,32 +526,22 @@
   }
 
   .footer {
-
-
     &__main {
       flex-direction: column;
 
       &__logo {
-
         max-width: 200px;
-
-        img {}
       }
 
       &__list {
-
         max-width: 100%;
 
         ul {
-
+          margin-top: 20px;
 
           li {
-
-
             a {
-
               font-size: 16px;
-
             }
           }
         }
@@ -441,16 +552,13 @@
         flex-direction: column;
 
         a {
-
           font-size: 16px;
-
+          margin-top: 20px;
           margin-right: 0px;
 
           &:last-child {
             margin-right: 0;
           }
-
-       
         }
       }
 
@@ -459,7 +567,6 @@
         max-width: 100%;
 
         p {
-
           font-size: 16px;
           text-align: center;
         }
@@ -470,14 +577,135 @@
 
 @media screen and (min-width:576.99px) and (max-width:768px) {
 
-  .home-banner {
+  .contact-banner {
+    &__main {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .contact-form {
+    padding-top: 30px;
+
+    &__main {
+      &__form {
+        &__title {
+
+          h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #464646;
+            margin-bottom: 20px;
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__inputs {
+          label {
+            font-size: 16px;
+          }
+
+          input {
+            min-height: 40px;
+          }
+        }
+
+        &__submit {
+          font-size: 18px;
+          min-height: 50px;
+          margin: 40px auto 0;
+        }
+      }
+
+      &__location {
+        margin-top: 30px;
+
+        &__title {
+
+          h2 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__info {
+          a {
+            font-size: 16px;
+          }
+        }
+
+        &__social {
+          a {
+            font-size: 16px;
+
+            img {
+              max-width: 30px;
+            }
+          }
+        }
+
+        &__map {
+          width: 100%;
+          height: auto;
+          margin-top: 50px;
+
+          iframe {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .services-banner {
+    &__main {
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .services-item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 50px;
 
     &__main {
 
+      &__info {
+        padding: 50px 0 0 0px;
 
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      &__image {
+        margin-top: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .home-banner {
+    &__main {
       &__title {
-
-
         h1 {
           font-size: 20px;
         }
@@ -848,6 +1076,133 @@
 }
 
 @media screen and (min-width:768.99px) and (max-width:992px) {
+
+  .contact-banner {
+    &__main {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .contact-form {
+    padding-top: 30px;
+
+    &__main {
+      &__form {
+        &__title {
+
+          h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #464646;
+            margin-bottom: 20px;
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__inputs {
+          label {
+            font-size: 16px;
+          }
+
+          input {
+            min-height: 40px;
+          }
+        }
+
+        &__submit {
+          font-size: 18px;
+          min-height: 50px;
+          margin: 40px auto 0;
+        }
+      }
+
+      &__location {
+        margin-top: 30px;
+
+        &__title {
+
+          h2 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__info {
+          a {
+            font-size: 16px;
+          }
+        }
+
+        &__social {
+          a {
+            font-size: 16px;
+
+            img {
+              max-width: 30px;
+            }
+          }
+        }
+
+        &__map {
+          width: 100%;
+          height: auto;
+          margin-top: 50px;
+
+          iframe {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .services-banner {
+    &__main {
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .services-item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 50px;
+
+    &__main {
+
+      &__info {
+        padding: 50px 0 0 0px;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      &__image {
+        margin-top: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
   .home-banner {
     &__main {
       &__title {
@@ -1155,6 +1510,42 @@
 }
 
 @media screen and (min-width:992.99px) and (max-width:1200px) {
+  .services-banner {
+    &__main {
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .services-item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 50px;
+
+    &__main {
+
+      &__info {
+        padding: 50px 0 0 0;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      &__image {
+        margin-top: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
   .our-company {
     margin-top: -85px;
 
