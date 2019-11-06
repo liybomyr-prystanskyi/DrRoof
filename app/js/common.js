@@ -85,11 +85,29 @@ jQuery(function () {
 
 
 	var serviceSlider = new Swiper('.our-work__main__swiper', {
+		slidesPerView: 3,
 		navigation: {
 			nextEl: '.our-work__main__next',
 			prevEl: '.our-work__main__prev',		
 		},
-		slidesPerView: 3
+
+		breakpoints: {
+			// when window width is <= 320px
+			320: {
+				slidesPerView: 1,
+				slidesPerColumn: 1,
+			},
+			// when window width is <= 480px
+			768: {
+				slidesPerView: 2,
+				slidesPerColumn: 1,
+			},
+			1200: {
+				slidesPerView: 3,
+				slidesPerColumn: 1,
+			}
+
+		}
 	});
 
 
